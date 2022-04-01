@@ -1,501 +1,252 @@
 import { Product } from "./types"
 
-const productList: Product[] = 
-  [
-    {
-      id: '1',
-      title: 'Bobina 30 M Fleje Acero Inox 1/2 x 0,7',
-      category: 'Herrajes',
-      description: 'FLEJE ACERO INOXIDABLE 1/2 X 30mts. 1 BOBINA.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Fleje-precincor-GECOMM-YbNxWeXVMKiNDogB.png',
-      price: '30.42',
-      iva: '21'
-    },
-    {
-      id: '2',
-      title: 'Bobina 30 M Fleje Acero Inox 3/4 x 0,7',
-      category: 'Herrajes',
-      description: 'FLEJE ACERO INOXIDABLE 3/4 X 30mts. 1 BOBINA.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Fleje-precincor-GECOMM-YbNxWeXVMKiNDogB.png',
-      price: '38.22',
-      iva: '21'
-    },
-    {
-      id: '3',
-      title: 'Hebillas Acero Inox. 1/2 X100',
-      category: 'Herrajes',
-      description: 'HEBILLAS DE ACERO INOXIDABLE 1/2. 100 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/GECOMM-cm-mePN90k3BVs2BBxk.png',
-      price: '32.00',
-      iva: '20.1'
-    },
-    {
-      id: '4',
-      title: 'Hebillas Acero Inox. 3/4 X100',
-      category: 'Herrajes',
-      description: 'HEBILLAS DE ACERO INOXIDABLE 3/4.100 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/GECOMM-cm-mePN90k3BVs2BBxk.png',
-      price: '29.00',
-      iva: '20.1'
-    },
-    {
-      id: '5',
-      title: 'Ménsula TU FTTH Galvanizada X50',
-      category: 'Herrajes',
-      description: 'MENSULAS TU GALVANIZADAS.50 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/M-nsula-tu-cm-YrDDPDPX4Nu9Xr8o.png',
-      price: '135.00',
-      iva: '21'
-    },
-    {
-      id: '6',
-      title: 'Zunchadora para Flejes FTTH',
-      category: 'Herramientas',
-      description: 'ZUNCHADORA. 1 UNIDAD.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Zunchadora-GECOMM-YrD0xzonJNhQWen5.png',
-      price: '80.00',
-      iva: '21'
-    },
-    {
-      id: '7',
-      title: 'Pinza de Anclaje Plástica 5-20 MM X50',
-      category: 'Herrajes',
-      description: 'PINZAS DE ANCLAJE 5-20 MM.50 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/PZA-RET-GECOMM-AE0z1O5nw2uXB0ZJ.png',
-      price: '54.00',
-      iva: '21'
-    },
-    {
-      id: '8',
-      title: 'Morseto de Suspensión 8-10 MM C/Fusible X50',
-      category: 'Herrajes',
-      description: 'MORSETOS DE SUSPENSIÓN 8-10 MM C/FUSIBLE.50 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/MZ-SUS-GECOMM-cm-YrD0xz3PkyiG31zo.png',
-      price: '71.50',
-      iva: '21'
-    },
-    {
-      id: '9',
-      title: 'Preformado de Suspensión (7-8 mm) X50',
-      category: 'Herrajes',
-      description: 'PREFORMADOS DE SUSPENSIÓN PARA CABLES DE 7 A 8 MM.50 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Preformado-Suspensi-n-GECOMM-cm-mnlBor47N5TvPJrk.png',
-      price: '115.00',
-      iva: '21'
-    },
-    {
-      id: '10',
-      title: 'Preformado de Suspensión  (8-9 mm) X50',
-      category: 'Herrajes',
-      description: 'PREFORMADOS DE SUSPENSIÓN PARA CABLES DE 8 A 9 MM.50 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Preformado-Suspensi-n-GECOMM-cm-mnlBor47N5TvPJrk.png',
-      price: '125.00',
-      iva: '20,1'
-    },
-    {
-      id: '11',
-      title: 'Preformado de Suspensión  (9-10 mm) X50',
-      category: 'Herrajes',
-      description: 'PREFORMADOS DE SUSPENSIÓN PARA CABLES DE 9 A 10 MM.50 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Preformado-Suspensi-n-GECOMM-cm-mnlBor47N5TvPJrk.png',
-      price: '130.00',
-      iva: '20.1'
-    },
-    {
-      id: '12',
-      title: 'Preformado de Suspensión  (10-11 mm) X50',
-      category: 'Herrajes',
-      description: 'PREFORMADOS DE SUSPENSIÓN PARA CABLES DE 10 A 11 MM.50 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Preformado-Suspensi-n-GECOMM-cm-mnlBor47N5TvPJrk.png',
-      price: '135.00',
-      iva: '20.1'
-    },
-    {
-      id: '13',
-      title: 'Preformado de Retención  (7-8 mm) X50',
-      category: 'Herrajes',
-      description: 'PREFORMADOS DE RETENCIÓN PARA CABLES DE 7 A 8 MM.50 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Preformado-Retenci-n-GECOMM-m5K7X3nbEpuqzenL.png',
-      price: '175.00',
-      iva: '21'
-    },
-    {
-      id: '14',
-      title: 'Preformado de Retención  (8-9 mm) X50',
-      category: 'Herrajes',
-      description: 'PREFORMADOS DE RETENCIÓN PARA CABLES DE 8 A 9 MM.50 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Preformado-Retenci-n-GECOMM-m5K7X3nbEpuqzenL.png',
-      price: '180.00',
-      iva: '21'
-    },
-    {
-      id: '15',
-      title: 'Preformado de Retención  (9-10 mm) X50',
-      category: 'Herrajes',
-      description: 'PREFORMADOS DE RETENCIÓN PARA CABLES DE 9 A 10 MM.50 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Preformado-Retenci-n-GECOMM-m5K7X3nbEpuqzenL.png',
-      price: '185.00',
-      iva: '21'
-    },
-    {
-      id: '16',
-      title: 'Preformado de Retención  (10-11 mm) X50',
-      category: 'Herrajes',
-      description: 'PREFORMADOS DE RETENCIÓN PARA CABLES DE 10 A 11 MM.50 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Preformado-Retenci-n-GECOMM-m5K7X3nbEpuqzenL.png',
-      price: '190.00',
-      iva: '21'
-    },
-    {
-      id: '17',
-      title: 'Cruz de Reserva 350X350 MM X10',
-      category: 'Herrajes',
-      description: 'CRUCES DE RESERVA GALVANIZADAS 350 MM.10 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Cruces%20kc%20GECOMM%20cm%202-YNqLZMPpkOSaL3pO.png',
-      price: '60.00',
-      iva: '21'
-    },
-    {
-      id: '18',
-      title: 'Cruz de Reserva 500X500 MM X10 ',
-      category: 'Herrajes',
-      description: 'CRUCES DE RESERVA GALVANIZADAS 500 MM.10 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Cruces%20kc%20GECOMM%20cm%202-YNqLZMPpkOSaL3pO.png',
-      price: '70.00',
-      iva: '21'
-    },
-    {
-      id: '19',
-      title: 'Soporte Fijación Drop Retención Suspensión (SUPA) X50',
-      category: 'Herrajes',
-      description: 'SUPA.50 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/SUCO-GECOMM-cm-mjEWR0LPentP0DD0.png',
-      price: '113.50',
-      iva: '21'
-    },
-    {
-      id: '20',
-      title: 'Fibra Óptica Aérea Mini ADSS (ASU) 80 4 F x 4 KM',
-      category: 'Fibra Óptica FTTH',
-      description: 'FIBRA ASU 4F VANOS 80 M 4 KM.1 BOBINA.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Fibra%20ASU%20GECOMM%20cm2-Yle0zbJvooHVVgx6.png',
-      price: '1198.00',
-      iva: '10,5'
-    },
-    {
-      id: '21',
-      title: 'Fibra Óptica Aérea Mini ADSS (ASU) 80 12 F x 4 KM',
-      category: 'Fibra Óptica FTTH',
-      description: 'FIBRA ASU 12F VANOS 80 M 4 KM.1 BOBINA.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Fibra%20ASU%20GECOMM%20cm2-Yle0zbJvooHVVgx6.png',
-      price: '1663.00',
-      iva: '10,5'
-    },
-    {
-      id: '22',
-      title: 'Fibra Óptica Aérea Mini ADSS (ASU) 80 24 F x 4 KM',
-      category: 'Fibra Óptica FTTH',
-      description: 'FIBRA ASU 24F VANOS 80 M 4 KM. 1 BOBINA.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Fibra%20ASU%20GECOMM%20cm2-Yle0zbJvooHVVgx6.png',
-      price: '1495.00',
-      iva: '10,5'
-    },
-    {
-      id: '23',
-      title: 'Fibra Oval 4x7 4F A2 LTUBE x 1 KM',
-      category: 'Fibra Óptica FTTH',
-      description: 'FIBRA OVAL 4F VANOS 80 M 1 KM.1 BOBINA.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Oval-AR0znWoz1kHpZgWo.png',
-      price: '310.00',
-      iva: '10,5'
-    },
-    {
-      id: '24',
-      title: 'Fibra Drop c/Portante Acero 1F G657A2 1KM',
-      category: 'Fibra Óptica FTTH',
-      description: 'FIBRA DROP FLAT 1F PORTANTE DE ACERO 1 KM.1 BOBINA.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/DROP-GECOMM-cm-dJoqv8Be23tV8Dlx.png',
-      price: '96.00',
-      iva: '10,5'
-    },
-    {
-      id: '25',
-      title: 'Fibra Drop c/Portante Acero 1F G657A2 1KM X 72',
-      category: 'Fibra Óptica FTTH',
-      description: 'FIBRA DROP FLAT 1F PORTANTE DE ACERO 1 KM.72 BOBINAS.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/DROP-GECOMM-cm-dJoqv8Be23tV8Dlx.png',
-      price: '6336.00',
-      iva: ''
-    },
-    {
-      id: '26',
-      title: 'Fibra Drop c/Portante Acero 4F G657A2 1KM',
-      category: 'Fibra Óptica FTTH',
-      description: 'FIBRA DROP FLAT 4F PORTANTE DE ACERO 1 KM.1 BOBINA.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/DROP-GECOMM-cm-dJoqv8Be23tV8Dlx.png',
-      price: '160.00',
-      iva: '10,5'
-    },
-    {
-      id: '27',
-      title: 'Conector Rápido SC/APC (Azul) X100',
-      category: 'Fibra Óptica FTTH',
-      description: 'CONECTORES RÁPIDOS AZULES SC/UPC.100 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/CM-GECOMM-dOq2JkbqPDuDnBJE.png',
-      price: '124.00',
-      iva: '10,5'
-    },
-    {
-      id: '28',
-      title: 'Conector Rápido SC/APC (Verde) X100',
-      category: 'Fibra Óptica FTTH',
-      description: 'CONECTORES RÁPIDOS VERDES  SC/APC.100 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/CM-GECOMM-dOq2JkbqPDuDnBJE.png',
-      price: '124.00',
-      iva: '10,5'
-    },
-    {
-      id: '29',
-      title: 'Patchcord 2,0 Metros SC/APC - SC/APC X10',
-      category: 'Fibra Óptica FTTH',
-      description: 'PATCHCORDS SC/APC-SC/APC 2 MTS SM.10 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/PCORDVERDE-GECOMM-cm-dJoqv8NZ5Rf0jOka.png',
-      price: '22.10',
-      iva: '21'
-    },
-    {
-      id: '30',
-      title: 'Patchcord 2,0 Metros SC/UPC - SC/UPC X10',
-      category: 'Fibra Óptica FTTH',
-      description: 'PATCHCORDS SC/UPC-SC/UPC 2 MTS SM.10 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/PCORDAZUL-GECOMM-cm-d95vXyrBKDTeRy6d.png',
-      price: '22.10',
-      iva: '20.1'
-    },
-    {
-      id: '31',
-      title: 'Patchcord 1,0 Metros SC/APC - SC/UPC X10',
-      category: 'Fibra Óptica FTTH',
-      description: 'PATCHCORDS SC/APC-SC/UPC 1 MT SM.10 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/PCORDAZULVERDE%20GECOMM%20cm%202-AGBj7a9OKXIQen60.png',
-      price: '22.10',
-      iva: '20.1'
-    },
-    {
-      id: '32',
-      title: 'Roseta Óptica 2 Puertos X 50',
-      category: 'Fibra Óptica FTTH',
-      description: 'ROSETAS ÓPTICAS 2 PUERTOS (VACÍAS).50 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/ROSETA-GECOMM-cm-mp801z6VeqhvWQGg.png',
-      price: '60.00',
-      iva: '21'
-    },
-    {
-      id: '33',
-      title: 'Adaptador SC/APC X25',
-      category: 'Fibra Óptica FTTH',
-      description: 'ADAPTADORES SC/APC.25 UNIDADES',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Cupla-GECOMM-cm-A853bkZbaRi5eeGd.png',
-      price: '9.00',
-      iva: '21'
-    },
-    {
-      id: '34',
-      title: 'Splitter 1x8 Conectores SC/APC-0,60MTSX0,60MTS',
-      category: 'Fibra Óptica FTTH',
-      description: 'SPLITTER 1X8 SC/APC.1 UNIDAD.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/SPLITTER-GECOMM-cm-AGBNx7GVvoSDar0l.png',
-      price: '14.34',
-      iva: '10,5'
-    },
-    {
-      id: '35',
-      title: 'Caja Exterior FTTH 2X8 + 1 splitter 1×8 conect. SC/APC \n' +
-        '+ 8 adapt. SC/APC X5',
-      category: 'Fibra Óptica FTTH',
-      description: 'CAJA EXTERIOR FTTH 2X8 CON SPLITTER 1X8 Y ADAPTADORES.5 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/nap2x8%20GECOMM%20cm2-d956yq62wOUgKbZ1.png',
-      price: '120.00',
-      iva: '21'
-    },
-    {
-      id: '36',
-      title: 'Caja Exterior FTTH 2X16  \n' +
-        '+ 1 splitter 1x16 conect. SC/APC \n' +
-        '+ 16 adapt. SC/APC ',
-      category: 'Fibra Óptica FTTH',
-      description: 'CAJA EXTERIOR FTTH 2X16 CON SPLITTER 1X16 Y ADAPTADORES.5UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/nap2x16%20GECOMM%20cm2-YbN56kOJkeugwEVK.png',
-      price: '210.00',
-      iva: '21'
-    },
-    {
-      id: '37',
-      title: 'Cierre de Empalme 48 Fibras',
-      category: 'Fibra Óptica FTTH',
-      description: 'CIERRE DE EMPALME 48 F. 1 UNIDAD.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/empalme-m2WkMn40KBcr5b3b.png',
-      price: '60.00',
-      iva: '20.1'
-    },
-    {
-      id: '38',
-      title: 'Retención Clamp OVAL/FLAT X100',
-      category: 'Morsetería Drop',
-      description: 'RETENCIÓN CLAMP METÁLICO.100 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Clamp-GECOMM-cm-d95v2aRQKbHrex26.png',
-      price: '53.00',
-      iva: '20.1'
-    },
-    {
-      id: '39',
-      title: 'Retención Clamp OVAL/FLAT X500',
-      category: 'Morsetería Drop',
-      description: 'RETENCIÓN CLAMP METÁLICO.500 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Clamp-GECOMM-cm-d95v2aRQKbHrex26.png',
-      price: '265.00',
-      iva: '20.1'
-    },
-    {
-      id: '40',
-      title: 'Retención Clamp OVAL/FLAT X2000',
-      category: 'Morsetería Drop',
-      description: 'RETENCIÓN CLAMP METÁLICO.2000 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Clamp-GECOMM-cm-d95v2aRQKbHrex26.png',
-      price: '1020.00',
-      iva: '21'
-    },
-    {
-      id: '41',
-      title: 'Retención Clamp OVAL/FLAT X10000',
-      category: 'Morsetería Drop',
-      description: 'RETENCIÓN CLAMP METÁLICO.10000 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Clamp-GECOMM-cm-d95v2aRQKbHrex26.png',
-      price: '5000.00',
-      iva: '21'
-    },
-    {
-      id: '42',
-      title: 'Mordaza Cartuchera FTTH X500',
-      category: 'Morsetería Drop',
-      description: 'RETENCIÓN TIPO CARTUCHERA CON GANCHO INCLUIDO. 500 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Cartuchera-GECOMM-A3QW5ZE0ZqsXLK1n.png',
-      price: '160.00',
-      iva: '21'
-    },
-    {
-      id: '43',
-      title: 'Mordaza Cartuchera FTTH X2000',
-      category: 'Morsetería Drop',
-      description: 'RETENCIÓN TIPO CARTUCHERA CON GANCHO INCLUIDO. 2000 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Cartuchera-GECOMM-A3QW5ZE0ZqsXLK1n.png',
-      price: '600.00',
-      iva: '21'
-    },
-    {
-      id: '44',
-      title: 'Mordaza Cartuchera FTTH 2 (Compatible SUPA)',
-      category: 'Morsetería Drop',
-      description: 'RETENCIÓN TIPO CARTUCHERA CON GANCHO LARGO INCLUIDO. 500 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Cartuchera-GECOMM-dOq2Q3XJ1gupD902.png',
-      price: '215.00',
-      iva: '21'
-    },
-    {
-      id: '45',
-      title: 'Mordaza Retención Fig.8',
-      category: 'Morsetería Drop',
-      description: 'RETENCIÓN TIPO FIG.8 CON GANCHO INCLUIDO. 500 UNIDADES.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Mordaza-GECOMM-mk3Ek089OKTqDLg0.png',
-      price: '155.00',
-      iva: '21'
-    },
-    {
-      id: '46',
-      title: 'Cable UTP Cat. 5E Exterior X 305MTS ',
-      category: 'Cableado Estructurado',
-      description: 'CABLE UTP CAT. 5E EXTERIOR X 305MTS.1 BOBINA.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/utp%20cat5-YX49Gngk0Vh0GR28.png',
-      price: '125.00',
-      iva: '21'
-    },
-    {
-      id: '47',
-      title: 'Cable UTP Cat. 5E Exterior C/Port.Acero X 305MTS',
-      category: 'Cableado Estructurado',
-      description: 'CABLE UTP CAT 5E EXTERIOR C/PORTANTE ACERO X 305MTS.1 BOBINA.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/utp%20ext%20acero-ALpGD5ZLbesGJWyg.png',
-      price: '175.00',
-      iva: '21'
-    },
-    {
-      id: '48',
-      title: 'Cable UTP Cat. 5E Interior/Exterior X 305MTS MAX\r\n',
-      category: 'Cableado Estructurado',
-      description: 'CABLE UTP CAT. 5E INTERIOR/EXTERIOR X 305MTS MAX.1 BOBINA.\n',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/utp%20cat5%20max-dWxVG2zZoqux7O7a.png',
-      price: '160.00',
-      iva: '21'
-    },
-    {
-      id: '49',
-      title: 'Cable UTP Cat. 5E Exterior C/Port.Acero X 305MTS MAX',
-      category: 'Cableado Estructurado',
-      description: 'CABLE UTP CAT 5E EXTERIOR C/PORTANTE ACERO X 305MTS MAX.1 BOBINA.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/utp%20ext%20acero-ALpGD5ZLbesGJWyg.png',
-      price: '240.00',
-      iva: '21'
-    },
-    {
-      id: '50',
-      title: 'ONU HUAWEI HG8310M ',
-      category: 'Electrónica GPON',
-      description: 'ONU HUAWEI HG8310M CON FUENTE.1 UNIDAD.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/ONU%20HUA%20SIN%20WIFI-A3Q4Zj0M8rIZle6N.png',
-      price: '29.00',
-      iva: '21'
-    },
-    {
-      id: '51',
-      title: 'ONU HUAWEI EG8141A5 1 GE+3FE+POT+WIFI',
-      category: 'Electrónica GPON',
-      description: 'ONU HUAWEI EG8141A5 1 GE+3FE+POT+WIFI CON FUENTE.1 UNIDAD.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/ONU%20HUA-YyvLqxRW3Xh4BG11.png',
-      price: '45.00',
-      iva: '21'
-    },
-    {
-      id: '52',
-      title: 'ONU ZTE F601',
-      category: 'Electrónica GPON',
-      description: 'ONU ZTE F601 CON FUENTE.1 UNIDAD.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/ONU%20ZTE%20SIN%20WIFI-mp8NzwzONLURjBlM.png',
-      price: '28.00',
-      iva: '21'
-    },
-    {
-      id: '53',
-      title: 'ONU ZTE F660 V8 1GE+3FE+POT+WIFI',
-      category: 'Electrónica GPON',
-      description: 'ONU ZTE F660 V8 1GE+3FE+POT+WIFI CON FUENTE.1 UNIDAD.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/ONU%20ZTE%20WIFI-mjED0wWBKgFZZLJ2.png',
-      price: '42.00',
-      iva: '21'
-    },
-    {
-      id: '54',
-      title: 'ONU VSOL 1GE+1FE+WIFI+CATV ',
-      category: 'Electrónica GPON',
-      description: 'ONU VSOL 1GE+1FE+WIFI+CATV CON FUENTE.1 UNIDAD.',
-      image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/ONU%20CCTV%20VSOL-AwvyXwOZ79h28Z3M.png',
-      price: '62.00',
-      iva: '21'
-    }
-  ]
+//price in US $
+const productList: Product[] = [
+  {
+    id: "1",
+    title: "Razer Huntsman Mini Optical Red Linear Switch Gaming Keyboard",
+    category: "keyboard",
+    description: "Dominate on a different scale with the Razer Huntsman Mini a 60% gaming keyboard with cutting-edge Razer Optical Switches. Highly portable and ideal for streamlined setups, it is time to experience lightning-fast actuation in our most compact form factor yet.",
+    price: 69.99,
+    image: "https://i.ibb.co/jhFW04D/product-1.webp",
+  },
+  {
+    id: "2",
+    title: "Razer Cynosa V2 - Membrane Gaming Keyboard RGB",
+    category: "keyboard",
+    description: "Paint your play in a truly immersive light with the Razer Cynosa V2—the essential RGB gaming keyboard. With customizable lighting in every key, watch it come alive as you game on Chroma-integrated titles, and embrace a gaming experience you wont ever want to turn away from.",
+    price: 79.99,
+    image: "https://i.ibb.co/LQzB6p4/product-2.webp",
+  },
+  {
+    id: "3",
+    title: "Razer BlackWidow V3 Pro QWERTY RGB",
+    category: "keyboard",
+    description: "Feel the difference with the Razer BlackWidow V3—backed by a legacy as the first and most iconic mechanical gaming keyboard, and armed with new, improved features including our world-renowned switches.",
+    price: 74.99,
+    image: "https://i.ibb.co/TW4sXRq/product-3.webp",
+  },
+  {
+    id: "4",
+    title: "Logitech G Pro Mechanical Gaming Keyboard RGB",
+    category: "keyboard",
+    description: "Featuring the fastest and most durable Romer-G switches in a compact and ultra-portable ten keyless design, plus advanced performance built in: customizable Logitech RGB color lighting and lighting patterns, game mode button to disable Windows key and avoid accidental actuation, macros to execute complex commands in a single keystroke, 87 key anti-ghosting and 26-key rollover for precision control, and onboard memory to store your lighting configuration. This is the wired Logitech keyboard designed to give you the competitive edge.",
+    price: 49.99,
+    image: "https://i.ibb.co/h8N2mM7/product-4.webp",
+  },
+  {
+    id: "5",
+    title: "Logitech G513 GX Blue Switch RGB Mechanical Gaming Keyboard",
+    category: "keyboard",
+    description: "G513 is a high-performance gaming keyboard featuring your choice of advanced GX mechanical switches. The detachable, memory-foam palmrest and premium aluminum-alloy construction make G513 full-featured and best-in-class.",
+    price: 79.99,
+    image: "https://i.ibb.co/M5gSVbb/product-5.webp",
+  },
+  {
+    id: "6",
+    title: "Logitech G815 LIGHTSYNC RGB Mechanical Gaming Keyboard",
+    category: "keyboard",
+    description: "Advanced gaming technologies in a sophisticated ultra-thin design. Fully customizable, equipped with LIGHTSYNC RGB and dedicated G-keys. Engineered for high-performance gameplay with low-profile GL mechanical switches in clicky, tactile, and linear variations. Experience G815 and play the next dimension.",
+    price: 85.00,
+    image: "https://i.ibb.co/mFKtGnf/product-6.webp",
+  },
+  {
+    id: "7",
+    title: "Keyboard HyperX Alloy Origins 60 QWERTY Red",
+    category: "keyboard",
+    description: "The HyperX Alloy Origins™ 60 is a supremely portable 60% form factor keyboard that gives you more room for sweeping mouse movements. It features a durable, full aluminum body, and reliable HyperX switches balanced for speed and performance which are rated to withstand 80 million keypresses. The stock double shot PBT keycaps have secondary functions printed on them so you can quickly locate additional functionality. Let your style shine bright with the HyperX switches exposed LED design, and stunning lighting effects. Further customize your keyboard with macros, personalized lighting profiles, and more with HyperX NGENUITY software.",
+    price: 120.00,
+    image: "https://i.ibb.co/JtKWycF/product-7.webp",
+  },
+  {
+    id: "8",
+    title: "Keyboard HyperX Alloy Origins QWERTY RGB",
+    category: "keyboard",
+    description: "The HyperX Alloy Origins™ is a compact, sturdy keyboard featuring custom HyperX mechanical switches designed to give gamers the best blend of style, performance, and reliability. These key switches have exposed LEDs for stunning lighting with an actuation force and travel distance elegantly balanced for responsiveness and accuracy. Alloy Origins is built with a full aluminum body so it stays rigid and stable when keystrokes are flying, and also features keyboard feet that let you choose from three different tilt levels. Its sleek, compact design frees up space for mouse movement, and it also features a detachable USB Type-C cable for supreme portability.",
+    price: 79.99,
+    image: "https://i.ibb.co/KNGPJn3/product-8.webp",
+  },
+  {
+    id: "9",
+    title: "Logiteh G PRO Wireless Superlight",
+    category: "mouse",
+    description: "Less than 63 grams. Advanced low-latency LIGHTSPEED wireless. Sub-micron precision with HERO 25K sensor. Remove all obstacles with our lightest and fastest PRO mouse ever.",
+    price: 105.00,
+    image: "https://i.ibb.co/DKD64Zx/product-9.webp",
+  },
+  {
+    id: "10",
+    title: "Logitech G Series Lightspeed G502",
+    category: "mouse",
+    description: "G502 Lightspeed features an advanced optical sensor for maximum tracking accuracy, customizable RGB lighting, custom game profiles, from 200 up to 25,600 DPI, and repositionable weights.",
+    price: 59.99,
+    image: "https://i.ibb.co/jgB6BLm/product-10.webp",
+  },
+  {
+    id: "11",
+    title: "Logitech G Series Lightspeed G305",
+    category: "mouse",
+    description: "G305 is a LIGHTSPEED wireless gaming mouse designed for serious performance with latest technology innovations at an affordable price point. Now in a variety of vibrant colors.",
+    price: 39.99,
+    image: "https://i.ibb.co/d5HkWyg/product-11.webp",
+  },
+  {
+    id: "12",
+    title: "Glorious Model D glossy black",
+    category: "mouse",
+    description: "The most comfortable ergonomic RGB gaming mouse. Packed with a full suite of ultra-premium features into an impossibly lightweight, ergonomic frame.",
+    price: 49.00,
+    image: "https://i.ibb.co/5rn87rP/product-12.webp",
+  },
+  {
+    id: "13",
+    title: "Glorious Model D Minus matte white",
+    category: "mouse",
+    description: "The most comfortable ergonomic RGB gaming mouse. Packed with a full suite of ultra-premium features into an impossibly lightweight, ergonomic frame.",
+    price: 55.00,
+    image: "https://i.ibb.co/6rqDqNG/product-13.webp",
+  },
+  {
+    id: "14",
+    title: "Razer Basilisk X Hyperspeed",
+    category: "mouse",
+    description: "25% faster than any other wireless technology available, you wont even realize that you are gaming with a wireless mouse due to its high-speed transmission, lowest click latency, and seamless frequency switching in the noisiest, data-saturated environments. As a benefit of its dual-mode design, you can also switch to its Bluetooth connection for extended battery life.",
+    price: 39.99,
+    image: "https://i.ibb.co/1d09X6W/product-14.webp",
+  },
+  {
+    id: "15",
+    title: "HyperX Pulsefire Haste",
+    category: "mouse",
+    description: "The HyperX Pulsefire Haste is built for elite gamers looking to gain every fraction of a second possible in their quest to be the best. Weighing in at 59 grams, this full-featured, responsive honeycomb shell mouse has everything you need, just without the extra weight. TTC Golden micro switches provide satisfying, reliable clicks and are rated for 60 million clicks, so you wont have to worry about missing inputs. The flexible HyperFlex USB cable and the virgin-grade PTFE skates work together to give you a smooth, easy glide to make dominating the game simple.",
+    price: 39.00,
+    image: "https://i.ibb.co/ZcVR05x/product-15.webp",
+  },
+  {
+    id: "16",
+    title: "Monitor BenQ XL-K Series XL2411K led 24",
+    category: "monitor",
+    description: "144Hz refresh rate performance for a smooth gaming experience. Supports 120Hz gaming on consoles (PS5 & Xbox Series X). Dynamic Accuracy technology makes vigorous in-game actions such as spraying less blur. Smaller base takes up less space, allowing gamer more space in their set-up for in-game movements. Increased height adjustment range and free tilt design provides more flexibility based on your personal preference",
+    price: 304.00,
+    image: "https://i.ibb.co/CKqynSY/product-16.webp",
+  },
+  {
+    id: "17",
+    title: "Monitor curved Asus TUF Gaming VG24VQ led 23.6",
+    category: "monitor",
+    description: "23.6-inch Full HD (1920 x 1080) 1500R gaming monitor with ultra-fast 165Hz refresh rate (supports 144Hz) designed for professional gamers and immersive gaming",
+    price: 141.00,
+    image: "https://i.ibb.co/qdgsg67/product-17.webp",
+  },
+  {
+    id: "18",
+    title: "Monitor ViewSonic XG2405 led 24",
+    category: "monitor",
+    description: "ViewSonic XG2405 is a 24 gaming monitor with IPS panel, 1ms response time, 144Hz refresh rate and AMD FreeSync Premium technology, offering the perfect combination of speed, ultra-responsive control and brilliant IPS colors. Designed for casual and hardcore gamers, the XG2405's sleek and ergonomic 3-sided borderless design makes it the ideal choice for any gaming station.",
+    price: 355.00,
+    image: "https://i.ibb.co/2y9J3jr/product-18.webp",
+  },
+  {
+    id: "19",
+    title: "Monitor gamer LG 24GL600F led 23.6 ",
+    category: "monitor",
+    description: "Expand your limits and take your level of play further. The 24 LG UltraGear monitor allows you to view your game at 144Hz/s with a response time of 1Ms. Includes FreeSync.",
+    price: 249.00,
+    image: "https://i.ibb.co/gMMqqxw/product-19.webp",
+  },
+  {
+    id: "20",
+    title: "Webcam Logitech Pro C920 1080p Full Hd",
+    category: "webcam",
+    description: "C920s delivers remarkably crisp and detailed Full HD video (1080p at 30fps) with a full HD glass lens, 78° field of view, and HD auto light correction—plus dual mics for clear stereo sound. Everything you need to look great in conference calls and record polished demos. The attachable privacy shutter protects the lens and keeps your privacy when you need it.",
+    price: 72.00,
+    image: "https://i.ibb.co/ZLbVF7r/product-20.webp",
+  },
+  {
+    id: "21",
+    title: "Webcam Hd Logitech C930e 1080p Full Hd",
+    category: "webcam",
+    description: "C930e is an advanced HD 1080p webcam that delivers high-resolution video in virtually any environment, including low-light and harshly backlit settings. H.264 video compression and a generously wide 90° field of view help make C930e the next best thing to being there in person.",
+    price: 92.00,
+    image: "https://i.ibb.co/XbkxRRs/product-21.webp",
+  },
+  {
+    id: "22",
+    title: "Webcam Logitech Stream Cam Plus 1080p",
+    category: "webcam",
+    description: "Logitech StreamCam streams and records in full HD 1080p resolution at 60 fps, delivering stunning video content with smooth motion to every aspect of your online world. From recording YouTube videos to streaming on Twitch and beyond, StreamCams premium glass lens and smart auto-focus system make it easy to get professional-quality results. Advanced features like auto-framing and intelligent exposure ensure you always look your best in any lighting",
+    price: 150.00,
+    image: "https://i.ibb.co/fk8LfjH/product-22.webp",
+  },
+  {
+    id: "23",
+    title: "Webcam Logitech C922 Pro Stream Full Hd",
+    category: "webcam",
+    description: "Connect with superior clarity every time you go live on channels like Twitch and YouTube. Stream anything you want in your choice of Full 1080p at 30fps or hyperfast HD 720p at 60fps. Broadcast masterfully with reliable no-drop audio, autofocus, and a 78° diagonal field of view. Includes free 3-month premium XSplit license.",
+    price: 85.00,
+    image: "https://i.ibb.co/PhNZ4CS/product-23.webp",
+  },
+  {
+    id: "24",
+    title: "Blue Snowball Ice condenser white",
+    category: "microphone",
+    description: "Snowball iCE is the fastest and easiest way to get high-quality sound for recording and streaming. Powered by a custom cardioid condenser capsule, Snowball iCE provides crystal clear audio quality that's light years away from your computer's built-in microphone. It's even Skype certified, ensuring great sound results no matter how or when you use it—at home, in the office, or in the studio.",
+    price: 25.00,
+    image: "https://i.ibb.co/gjZTQCN/product-24.webp",
+  },
+  {
+    id: "25",
+    title: "Hyperx Quadcast condenser",
+    category: "microphone",
+    description: "The HyperX QuadCast™ is the ideal all-inclusive standalone microphone for the aspiring streamer or podcaster looking for a condenser mic with quality sound. QuadCast comes with its own anti-vibration shock mount to help reduce the rumbles of daily life and a built-in pop filter to muffle pesky plosive sounds. Instantly know your mic status with the LED indicator, and simply tap-to-mute to avoid awkward broadcasting accidents. With four selectable polar patterns, this mics prepared for nearly any recording situation and also features a conveniently-located gain control dial to quickly adjust your mic input sensitivity. The included mount adapter fits 3/8” and 5/8” thread sizes and is compatible with most stands. The QuadCast S model provides RGB lighting and dynamic effects that are customizable through HyperX NGENUITY software.",
+    price: 145.00,
+    image: "https://i.ibb.co/VHd2K8w/product-25.webp",
+  },
+  {
+    id: "26",
+    title: "Razer Seiren X condenser black",
+    category: "microphone",
+    description: "When it comes to communicating with your fans, friends or family, clarity is key. Whether you are a streamer looking to produce quality content, or someone who requires a solid video call setup for everyday communication, say it loud and clear with the Razer Seirēn X.",
+    price: 39.00,
+    image: "https://i.ibb.co/nfN0vsp/product-26.webp",
+  },
+  {
+    id: "27",
+    title: "Razer Seiren Mini condenser white",
+    category: "microphone",
+    description: "Big sounds can come in small packages. Meet the Razer Seiren Mini—an ultra-compact condenser mic that's the perfect fit for professional grade-audio with any streaming or video call setup.",
+    price: 45.00,
+    image: "https://i.ibb.co/d7wQXW5/product-27.webp",
+  },
+  {
+    id: "28",
+    title: "Shure SM7B Vocal Dynamic Microphone Black",
+    category: "microphone",
+    description: "Whether it is big-time broadcasting, professional podcasts or critical studio recordings, this legendary dynamic microphone delivers smooth, warm vocals every time. The SM7B captures and enhances the finer details of the human voice while blocking out all the distractions.",
+    price: 489.99,
+    image: "https://i.ibb.co/LPy84DQ/product-28.webp",
+  },
+  {
+    id: "29",
+    title: "Hyperx Solocast Condenser Usb",
+    category: "microphone",
+    description: "For video editors, streamers, and gamers looking for a USB microphone with great sound quality, the HyperX SoloCast is a must have. It is Plug N Play, making it simple to use, with some of our fan-favorite conveniences like the tap-to-mute sensor and LED mute indicator. The versatile microphone has a flexible, adjustable stand and is also compatible with most boom arms, so it can either sit on your desk or work mounted. Certified by TeamSpeak and Discord and compatible with OBS, XSplit, Streamlabs OBS and a number of other programs, it is an extremely streamer-friendly microphone.",
+    price: 56.00,
+    image: "https://i.ibb.co/bHsgN0C/product-29.webp",
+  },
+  {
+    id: "30",
+    title: "Blue Yeti condenser blackout",
+    category: "microphone",
+    description: "Create unparalleled recordings with your computer using Blue's best-selling family of Yeti USB microphones. Now with Blue VOICE software, you can craft the perfect broadcast vocal sound and entertain your stream audience with enhanced effects, advanced voice modulation and HD audio samples. Four different pickup patterns offer incredible flexibility so you can record vocals for music, podcasts, Twitch streaming, YouTube videos, or even cryptozoology lectures in ways that would normally require multiple microphones. Whether you're recording at home, on the road, or in the Himalayas, Yeti helps you produce studio-quality recordings every time.",
+    price: 79.99,
+    image: "https://i.ibb.co/Xxj9PS6/product-30.webp",
+  },
+]
 
 const getById = (id: string) => {
   const productById: Product | undefined = productList.find(product => product.id === id)
   return productById
 }
 
-export {productList, getById}
+export { productList, getById }

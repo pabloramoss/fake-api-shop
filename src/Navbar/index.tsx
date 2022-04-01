@@ -6,9 +6,9 @@ import { Stack, Image } from '@chakra-ui/react';
 const Navbar: React.FC = ()=> {
 
   return(
-    <Stack justifyContent="space-between" direction="row" alignItems="center">
+    <Stack justifyContent="space-between" direction="row" alignItems="center" className='card'>
       <Image height={50} width={100} src="https://via.placeholder.com/100x50" alt='api logo' />
-      <Stack direction="row" spacing={5}>
+      <Stack direction="row" spacing={5} pe={4} color="brand.50">
         <Link href="/">
           <a>Home</a>
         </Link>

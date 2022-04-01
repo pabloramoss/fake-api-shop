@@ -5,16 +5,16 @@ interface Props {
   title: string;
   method: string;
   url: string;
-  output: string;
+  output: any;
 }
 
 const RouteCode: React.FC<Props> = ({ title, method, url, output })=> {
   return(
     <Stack spacing={5}>
-      <Heading fontSize="3xl" opacity={0.6}>{title}</Heading>
+      <Heading color="brand.50" fontSize="3xl" opacity={0.6} id={encodeURIComponent(title)}>{title}</Heading>
       <Stack direction="row" border="1px solid teal" width={200} alignItems="center">
-        <Text px={2} fontSize="xl" bg="teal" color="white">{method.toUpperCase()}</Text>
-        <Text fontWeight={500}>{url}</Text>
+        <Text px={2} fontSize="xl" bg="brand.200" color="white">{method.toUpperCase()}</Text>
+        <Text color="brand.50" fontWeight={500}>{url}</Text>
       </Stack>
       <Code>
         <Accordion allowMultiple>
@@ -27,7 +27,7 @@ const RouteCode: React.FC<Props> = ({ title, method, url, output })=> {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4}>{output}</AccordionPanel>
+            <AccordionPanel pb={4}><pre>{output}</pre></AccordionPanel>
           </AccordionItem>
         </Accordion>
       </Code>

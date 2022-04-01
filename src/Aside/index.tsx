@@ -5,17 +5,17 @@ import { Stack } from '@chakra-ui/react';
 const Aside: React.FC = ()=> {
 
   return(
-    <Stack spacing={10} bg="teal.50" p={10} h="100%">
-      <Link href="introduction">
+    <Stack spacing={6} bg="brand.300" p={10} h="100%" minW="150px" color="brand.50">
+      <Link href="#introduction">
         <a>Introduction</a>
       </Link>
       <Link href="#sampleCode">
         <a>Sample code</a>
       </Link>
-      <Link href="#getAllProducts">
+      <Link href={`#${encodeURIComponent("Get all products")}`}>
         <a>Get all products</a>
       </Link>
-      <Link href="#getProduct">
+      <Link href={`#${encodeURIComponent("Get a single product")}`}>
         <a>Get a single product</a>
       </Link>
     </Stack>
