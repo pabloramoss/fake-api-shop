@@ -12,8 +12,8 @@ const docs: React.FC = ()=> {
         <Grid    
           gridTemplateAreas = {{
             base: `
-            "navbar"
-            "content"`, 
+            "navbar navbar"
+            "content content"`, 
             md: `
             "navbar navbar"
             "aside content"` 

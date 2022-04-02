@@ -27,7 +27,7 @@ const RouteCode: React.FC<Props> = ({ title, method, url, output })=> {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4}><pre>{output}</pre></AccordionPanel>
+            <AccordionPanel overflowX="scroll" pb={4}><pre>{output}</pre></AccordionPanel>
           </AccordionItem>
         </Accordion>
       </Code>
