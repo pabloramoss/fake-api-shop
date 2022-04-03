@@ -4,7 +4,7 @@ import Navbar from "../src/Navbar/index"
 import Content from "../src/Content/index"
 import { Box, Container, Grid, GridItem } from '@chakra-ui/react';
 
-const docs: React.FC = ()=> {
+const Docs: React.FC = ()=> {
 
   return(
     <Box bg="brand.400" overflowX="auto">
@@ -34,4 +34,4 @@ const docs: React.FC = ()=> {
     </Box>
   )
 }
-export default docs
+export default Docs
