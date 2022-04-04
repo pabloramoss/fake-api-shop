@@ -3,9 +3,16 @@ import Link from "next/link"
 import { Stack } from '@chakra-ui/react';
 
 const Aside: React.FC = ()=> {
-
   return(
-    <Stack spacing={6} bg="brand.300" p={10} h="100%" minW="150px" color="brand.50" display={{ base: "none" , md: "flex"}}>
+    <Stack 
+      spacing={6} 
+      bg="brand.300" 
+      p={10} 
+      h="100%" 
+      minW="150px" 
+      color="brand.50" 
+      display={{ base: "none" , md: "flex"}}
+    >
       <Link href="#introduction">
         <a>Introduction</a>
       </Link>

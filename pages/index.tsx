@@ -6,7 +6,7 @@ import { Box, Container } from '@chakra-ui/react'
 const Home: NextPage = () => {
   return (
     <Box bg="brand.400">
-      <Container maxW='container.lg'>
+      <Container maxW='container.lg' p={0}>
         <Navbar />
         <HomeContent />
       </Container>

@@ -1,4 +1,16 @@
-import { Stack, Heading, Text, Box, Code, Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Divider } from '@chakra-ui/react';
+import { 
+  Stack, 
+  Heading, 
+  Text, 
+  Box, 
+  Code, 
+  Accordion, 
+  AccordionButton, 
+  AccordionIcon, 
+  AccordionItem, 
+  AccordionPanel, 
+  Divider 
+} from '@chakra-ui/react';
 import React from 'react';
 
 interface Props {
@@ -11,8 +23,20 @@ interface Props {
 const RouteCode: React.FC<Props> = ({ title, method, url, output })=> {
   return(
     <Stack spacing={5}>
-      <Heading color="brand.50" fontSize="3xl" opacity={0.6} id={encodeURIComponent(title)}>{title}</Heading>
-      <Stack direction="row" border="1px solid teal" width={200} alignItems="center">
+      <Heading 
+        color="brand.50" 
+        fontSize="3xl" 
+        opacity={0.6} 
+        id={encodeURIComponent(title)}
+      >
+        {title}
+      </Heading>
+      <Stack 
+        direction="row" 
+        border="1px solid gray" 
+        width={200} 
+        alignItems="center"
+      >
         <Text px={2} fontSize="xl" bg="brand.200" color="white">{method.toUpperCase()}</Text>
         <Text color="brand.50" fontWeight={500}>{url}</Text>
       </Stack>
@@ -27,7 +51,9 @@ const RouteCode: React.FC<Props> = ({ title, method, url, output })=> {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel overflowX="scroll" pb={4}><pre>{output}</pre></AccordionPanel>
+            <AccordionPanel overflowX="scroll" pb={4}>
+              <pre>{output}</pre>
+            </AccordionPanel>
           </AccordionItem>
         </Accordion>
       </Code>
