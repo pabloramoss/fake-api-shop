@@ -8,7 +8,7 @@ const HomeContent: React.FC = ()=> {
 
   return(
     <Container maxW="container.lg" pb={20}>
-      <Stack direction={{ base: "column", md: "row" }} alignItems="center" justifyContent={{base: "normal", md: "space-between"}} h="95vh" >
+      <Stack direction={{ base: "column", md: "row" }} alignItems="center" justifyContent={{base: "normal", md: "space-between"}} h="90vh" >
         <Stack mt={{base: 100, md: 0}}>
           <Heading color="brand.50">Fake gaming store app</Heading>
           <Text color="brand.50" opacity={0.8}>Simple fake store API for your e-commerce website prototype</Text>

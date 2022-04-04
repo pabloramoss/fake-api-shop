@@ -12,15 +12,26 @@ const Navbar: React.FC = ()=> {
       direction="row" 
       alignItems="center" 
       className="card" 
-      height="6vh">
+      height="6vh"
+    >
       <Box mt={2}>
         <Link href="/">
           <a>
-            <Image height={40} width={80} src="/logo.png" alt="api logo" />
+            <Image 
+              height={40} 
+              width={80} 
+              src="/logo.png" 
+              alt="api logo" 
+            />
           </a>
         </Link>
       </Box>
-      <Stack direction="row" spacing={5} pe={4} color="brand.50">
+      <Stack 
+        direction="row" 
+        spacing={5} 
+        pe={4} 
+        color="brand.50"
+      >
         <Link href="/">
           <a>Home</a>
         </Link>
