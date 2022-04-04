@@ -6,27 +6,23 @@ const content = [
     output: 
     `
         [
-            {
-                "id": "1",
-                "title": "Apple MacBook Pro 16",
-                "description": "Apple MacBook Pro 16 with Touch Bar, 9th-Gen
-                    8-Core Intel i9 2.4GHz, 32GB RAM, 512GB SSD, AMD Radeon Pro
-                    5300M 4GB, Space Gray, Late 2019",
-                "category": "Apple",
-                "image": "2969",
-                "price": "laptop"
+          {
+            id: "1",
+            title: "Razer Huntsman Mini Optical Red Linear Switch Gaming Keyboard",
+            category: "keyboard",
+            description: "Dominate on a different scale with the Razer Huntsman Mini a 60% gaming keyboard with cutting-edge Razer Optical Switches. Highly portable and ideal for streamlined setups, it is time to experience lightning-fast actuation in our most compact form factor yet.",
+            price: 69.99,
+            image: "https://i.ibb.co/jhFW04D/product-1.webp"
             },
             /* ... */
             {
-                "id": "30",
-                "title": "Logitech MK295 Wireless Mouse & Keyboard Combo",
-                "description": "Logitech MK295 Wireless Mouse & Keyboard Combo 
-                    with SilentTouch Technology, Full Numpad, Advanced Optical 
-                    Tracking, Lag-Free Wireless, 90% Less Noise - Graphite",
-                "category": "Logitech",
-                "image": "26",
-                "price": "accessories"
-            }
+              id: "30",
+              title: "Blue Yeti condenser blackout",
+              category: "microphone",
+              description: "Create unparalleled recordings with your computer using Blue's best-selling family of Yeti USB microphones. Now with Blue VOICE software, you can craft the perfect broadcast vocal sound and entertain your stream audience with enhanced effects, advanced voice modulation and HD audio samples. Four different pickup patterns offer incredible flexibility so you can record vocals for music, podcasts, Twitch streaming, YouTube videos, or even cryptozoology lectures in ways that would normally require multiple microphones. Whether you're recording at home, on the road, or in the Himalayas, Yeti helps you produce studio-quality recordings every time.",
+              price: 79.99,
+              image: "https://i.ibb.co/Xxj9PS6/product-30.webp"
+              }
         ]
     `
   },
@@ -36,13 +32,13 @@ const content = [
     url: "/api/products/1",
     output:
     `{
-        id: "1",
-        title: "Bobina 30 M Fleje Acero Inox 1/2 x 0,7",
-        category: "Herrajes",
-        description: "FLEJE ACERO INOXIDABLE 1/2 X 30mts. 1 BOBINA.",
-        image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=184,h=176,fit=crop/mP4obEx6alSpp0Kz/Fleje-precincor-GECOMM-YbNxWeXVMKiNDogB.png",
-        price: "30.42",
-    }`
+      id: "1",
+      title: "Razer Huntsman Mini Optical Red Linear Switch Gaming Keyboard",
+      category: "keyboard",
+      description: "Dominate on a different scale with the Razer Huntsman Mini a 60% gaming keyboard with cutting-edge Razer Optical Switches. Highly portable and ideal for streamlined setups, it is time to experience lightning-fast actuation in our most compact form factor yet.",
+      price: 69.99,
+      image: "https://i.ibb.co/jhFW04D/product-1.webp"
+      }`
   }
 ]
 const homeSample: string = `
