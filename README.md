@@ -4,7 +4,7 @@
 
 ## Resources
 There are only one resource in this api:
-- Products [https://simpleapistore.vercel.app/products](https://simpleapistore.vercel.app/products)
+- Products [https://simpleapistore.vercel.app/api/products](https://simpleapistore.vercel.app/api/products)
 
 ## How to
 You can fetch data awith any kind of methods you know (fetch API, Axios, etc.)
@@ -12,7 +12,7 @@ You can fetch data awith any kind of methods you know (fetch API, Axios, etc.)
 ### Get all products
 
 ```
-fetch("https://simpleapistore.vercel.app/products")
+fetch("https://simpleapistore.vercel.app/api/products")
   .then((res) => res.json())
   .then((json) => console.log(json));
 ```
@@ -20,7 +20,7 @@ fetch("https://simpleapistore.vercel.app/products")
 ### Get a single product
 
 ```
-fetch("https://simpleapistore.vercel.app/products/1")
+fetch("https://simpleapistore.vercel.app/api/products/1")
   .then((res) => res.json())
   .then((json) => console.log(json));
 ```
