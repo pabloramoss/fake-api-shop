@@ -14,6 +14,15 @@ const nextConfig = {
       },
     ];
   },
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'https://simpleapistore.vercel.app',
+        secure: false,
+        changeOrigin: true,
+      },
+    },
+  },
 }
 
 module.exports = nextConfig
